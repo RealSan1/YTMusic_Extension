@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Now Playing</title>
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+  <div class="lyrics-container">
+    <div class="song-header">
+      <img id="albumArt" src="" alt="Album Cover" class="song-cover">
+      <div class="song-info">
+        <div id="song-title" class="song-title">-</div>
+        <div id="artist-name" class="song-artist">-</div>
+        <div id="song-album" class="song-artist">-</div>
+        <div id="aria-value-display" class="time-display">00:00</div>
+      </div>
+      <div class="control-buttons">
+        <button id="previousMusic" class="control-button">⏮️</button>
+        <button id="stopMusic" class="control-button">⏯️</button>
+        <button id="nextMusic" class="control-button">⏭️</button>
+      </div>
+    </div>
+
+    <div class="lyrics-content">
+    </div>
+  </div>
+  <script src="popup.js"></script>
+  <script src="lyrics.js"></script>
+</body>
+</html>
+
+<!-- https://lrclib.net/ -->
+

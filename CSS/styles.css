@@ -1,0 +1,121 @@
+.lyrics-container {
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.song-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.song-cover {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.song-info {
+    flex-grow: 1;
+}
+
+.song-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.song-artist {
+    font-size: 16px;
+    color: #b3b3b3;
+    margin-bottom: 4px;
+}
+
+.time-display {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.lyrics-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lyrics-line {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #b3b3b3;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.lyrics-line.active {
+    color: #fff;
+    font-weight: 500;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.control-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 18px;
+}
+
+.control-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.tab {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab.active {
+    color: #fff;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+} 
